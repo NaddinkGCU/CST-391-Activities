@@ -1,10 +1,10 @@
 import { Router } from 'express';
-import { getAlbums } from './albums.controller.ts';
+import * as AlbumsController from './albums.controller.ts';
 
 
 const router = Router();
 router
     .route('/albums')
-    .get(getAlbums);
+    .get(AlbumsController.readAlbums);
 
 export default router;

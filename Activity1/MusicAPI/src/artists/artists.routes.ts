@@ -1,10 +1,9 @@
 import { Router } from 'express';
-import { getArtists } from './artists.controller.ts';
-
+import * as ArtistsController from './artists.controller.ts';
 
 const router = Router();
 router
     .route('/artists')
-    .get(getArtists);
+    .get(ArtistsController.readArtists);
 
 export default router;
