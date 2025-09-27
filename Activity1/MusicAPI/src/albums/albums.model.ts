@@ -1,4 +1,4 @@
-import { Track } from '../tracks/tracks.model.ts';
+import type { Track } from '../tracks/tracks.model.ts';
 
 export interface Album {
     albumId: number;
