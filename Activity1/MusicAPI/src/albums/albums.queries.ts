@@ -33,7 +33,7 @@ export const albumQueries = {
             id as albumId, title AS title, artist AS artist,
             description AS description, year AS year, image AS image
         FROM music.albums
-        WHERE music.albums.description LIKE ?
+        WHERE music.albums.id = ?
     `,
     createAlbum: `
         INSERT INTO ALBUMS(title, artist, description, year, image) VALUES(?,?,?,?,?)
@@ -43,7 +43,7 @@ export const albumQueries = {
         SET title = ?, artist = ?, year = ?, image = ?, description = ?
         WHERE id = ?
     `,
-    deleteAlbums: `
+    deleteAlbum: `
         DELETE FROM music.albums
         WHERE id = ?
     `,

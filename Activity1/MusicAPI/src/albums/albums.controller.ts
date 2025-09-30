@@ -1,6 +1,6 @@
 import { type Request, type Response } from 'express';
 import pkg from 'express';
-const { RequestHandler,                             } = pkg;
+const { RequestHandler} = pkg;
 import { type Album } from './albums.model.ts';
 import { type Track } from './../tracks/tracks.model.ts';
 import * as AlbumDao from './albums.dao.ts';
