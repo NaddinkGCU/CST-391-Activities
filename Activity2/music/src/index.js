@@ -40,5 +40,4 @@ const App = () => {
 const domNode = document.getElementById('root');
 const root = ReactDOM.createRoot(domNode);
 
-// 3. Render your app using the root object
 root.render(<App />);

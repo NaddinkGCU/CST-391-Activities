@@ -1,0 +1,48 @@
+import React, { useState } from "react";
+import Card from "./Card";
+import "./App.css";
+const App = () => {
+    const [albumList, setAlbumList] = useState([
+        {
+            artistId: 0,
+            artist: "Lady Gaga",
+            title: "MAYHEM",
+            description:
+                "Mayhem is the sixth solo studio album by American singer and songwriter Lady Gaga and her eighth overall. Thematically, it explores love, chaos, fame, identity, and desire, using metaphors of transformation, duality, and excess.",
+            year: 2025,
+            image: "https://upload.wikimedia.org/wikipedia/en/d/db/Lady_Gaga_-_Mayhem.png",
+        },
+        {
+            artistId: 1,
+            artist: "Lady Gaga",
+            title: "Chromatica",
+            description:
+                "Chromatica is the fifth solo studio album by American singer-songwriter Lady Gaga and her sixth overall. Musically, Chromatica is a dance-pop record inspired by early 1990s house music, returning Gaga to her dance music roots and eschewing the stripped-down style of its predecessors Joanne (2016) and A Star Is Born (2018). The album's visual aesthetic saw Gaga adopt a cyberpunk-inspired persona.",
+            year: 2020,
+            image: "https://upload.wikimedia.org/wikipedia/en/d/d6/Lady_Gaga_-_Chromatica_%28Official_Album_Cover%29.png",
+        },
+        {
+            artistId: 2,
+            artist: "Ricky Montgomery",
+            title: "Montgomery Ricky",
+            description:
+                "Ricky Montgomery’s music was ahead of its time—literally. His 2016 debut album Montgomery Ricky, featuring the two once-obscure, yet universal singles – “Line Without A Hook” and “Mr. Loverman” – made him an unexpected hitmaker four years after their original release, now surpassing more than 1 billion global streams to date.",
+            year: 2016,
+            image: "https://m.media-amazon.com/images/I/91TcSMLAWrL._SY355_.jpg",
+        },
+    ]);
+    const renderedList = () => {
+        return albumList.map((album) => {
+            return (
+                <Card
+                    albumTitle={album.title}
+                    albumDescription={album.description}
+                    buttonText="OK"
+                    imgURL={album.image}
+                />
+            );
+        });
+    };
+    return <div className="d-flex flex-column align-items-center">{renderedList()}</div>;
+};
+export default App;
