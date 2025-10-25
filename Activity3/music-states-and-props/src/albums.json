@@ -1,29 +1,82 @@
 [
     {
-        "artistId": 0,
+        "id": 0,
         "artist": "Lady Gaga",
         "title": "MAYHEM",
-        "description":
-            "Mayhem is the sixth solo studio album by American singer and songwriter Lady Gaga and her eighth overall. Thematically, it explores love, chaos, fame, identity, and desire, using metaphors of transformation, duality, and excess.",
+        "description": "Mayhem is the sixth solo studio album by American singer and songwriter Lady Gaga and her eighth overall. Thematically, it explores love, chaos, fame, identity, and desire, using metaphors of transformation, duality, and excess.",
         "year": 2025,
         "image": "https://upload.wikimedia.org/wikipedia/en/d/db/Lady_Gaga_-_Mayhem.png"
     },
     {
-        "artistId": 1,
+        "id": 1,
         "artist": "Lady Gaga",
         "title": "Chromatica",
-        "description":
-            "Chromatica is the fifth solo studio album by American singer-songwriter Lady Gaga and her sixth overall. Musically, Chromatica is a dance-pop record inspired by early 1990s house music, returning Gaga to her dance music roots and eschewing the stripped-down style of its predecessors Joanne (2016) and A Star Is Born (2018). The album's visual aesthetic saw Gaga adopt a cyberpunk-inspired persona.",
+        "description": "Chromatica is the fifth solo studio album by American singer-songwriter Lady Gaga and her sixth overall. Musically, Chromatica is a dance-pop record inspired by early 1990s house music, returning Gaga to her dance music roots. The album’s visual aesthetic saw Gaga adopt a cyberpunk-inspired persona.",
         "year": 2020,
         "image": "https://upload.wikimedia.org/wikipedia/en/d/d6/Lady_Gaga_-_Chromatica_%28Official_Album_Cover%29.png"
     },
     {
-        "artistId": 2,
+        "id": 2,
         "artist": "Ricky Montgomery",
         "title": "Montgomery Ricky",
-        "description":
-            "Ricky Montgomery’s music was ahead of its time—literally. His 2016 debut album Montgomery Ricky, featuring the two once-obscure, yet universal singles – “Line Without A Hook” and “Mr. Loverman” – made him an unexpected hitmaker four years after their original release, now surpassing more than 1 billion global streams to date.",
+        "description": "Ricky Montgomery’s music was ahead of its time—literally. His 2016 debut album Montgomery Ricky, featuring the two once-obscure, yet universal singles – “Line Without A Hook” and “Mr. Loverman” – made him an unexpected hitmaker four years after their original release, now surpassing more than 1 billion global streams to date.",
         "year": 2016,
         "image": "https://m.media-amazon.com/images/I/91TcSMLAWrL._SY355_.jpg"
+    },
+    {
+        "id": 3,
+        "artist": "Conan Gray",
+        "title": "Found Heaven",
+        "description": "Found Heaven is the third studio album by American singer-songwriter Conan Gray, released in 2024. The album explores themes of love, heartbreak, and self-discovery with a mix of nostalgic pop and modern synth sounds.",
+        "year": 2024,
+        "image": "https://upload.wikimedia.org/wikipedia/en/7/77/Conan_Gray_-_Found_Heaven.png"
+    },
+    {
+        "id": 4,
+        "artist": "Ricky Montgomery",
+        "title": "Rick(y)",
+        "description": "Rick(y) is the 2024 follow-up album by Ricky Montgomery, showcasing a matured sound that blends indie pop with heartfelt lyricism, reflecting on identity, fame, and personal growth.",
+        "year": 2024,
+        "image": "https://i.scdn.co/image/ab67616d0000b2732d9a989531fabd16eaea01b7"
+    },
+    {
+        "id": 5,
+        "artist": "Lady Gaga",
+        "title": "The Fame",
+        "description": "The Fame is the debut studio album by American singer Lady Gaga, released in 2008. It explores themes of fame, love, and materialism through dance-pop and synth-pop tracks that established Gaga as a pop icon.",
+        "year": 2008,
+        "image": "https://upload.wikimedia.org/wikipedia/en/d/dd/Lady_Gaga_%E2%80%93_The_Fame_album_cover.png"
+    },
+    {
+        "id": 6,
+        "artist": "Chappell Roan",
+        "title": "The Rise and Fall of a Midwest Princess",
+        "description": "The Rise and Fall of a Midwest Princess is the debut studio album by American singer-songwriter Chappell Roan, released in 2023. It combines glam-pop and heartfelt lyricism to tell a story of self-acceptance and identity.",
+        "year": 2023,
+        "image": "https://upload.wikimedia.org/wikipedia/en/3/34/Chappell_Roan_-_The_Rise_and_Fall_of_a_Midwest_Princess.png"
+    },
+    {
+        "id": 7,
+        "artist": "girl in red",
+        "title": "I'M DOING IT AGAIN BABY!",
+        "description": "I'M DOING IT AGAIN BABY! is the second studio album by Norwegian singer-songwriter girl in red, released in 2024. The album continues her exploration of mental health, love, and self-empowerment through upbeat and introspective indie pop.",
+        "year": 2024,
+        "image": "https://media.pitchfork.com/photos/65f88576f72cd52351d0c321/master/w_1280%2Cc_limit/Girl%2520in%2520Red%2520-%2520I'm%2520Doing%2520It%2520Again%2520Baby!.jpeg"
+    },
+    {
+        "id": 8,
+        "artist": "The Crane Wives",
+        "title": "Foxlore",
+        "description": "Foxlore is the fourth studio album by American indie-folk band The Crane Wives, released in 2016. It features rich harmonies, poetic storytelling, and a blend of folk and rock influences that define the band’s signature sound.",
+        "year": 2016,
+        "image": "https://f4.bcbits.com/img/a4236425860_10.jpg"
+    },
+    {
+        "id": 9,
+        "artist": "Ethel Cain",
+        "title": "Preacher's Daughter",
+        "description": "Preacher’s Daughter is the debut studio album by American singer-songwriter Ethel Cain, released in 2022. A Southern-Gothic concept album, it tells a haunting narrative about family, faith, trauma, and escape through cinematic soundscapes.",
+        "year": 2022,
+        "image": "https://i.scdn.co/image/ab67616d0000b273ccd1887cc78b0bd55f54bbe1"
     }
 ]
