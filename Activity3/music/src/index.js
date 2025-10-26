@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // Notice the /client import
-import Card from './Card';
 import App from './App'
 
 // assignment info was for older version of react
