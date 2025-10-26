@@ -1,25 +1,68 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import AboutThisSite from "./AboutUs";
+import ContactUs from "./ContactUs";
+import LoginPage from "./LoginPage";
+import User from './User';
+import NavBar from './NavBar';
+import PrivateRoute from "./PrivateRoute";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const handleLogin = (from, navigate) => {
+        setIsLoggedIn(true);
+        console.log('in handleLogin from', from);
+        console.log('in handleLogin navigate', navigate);
+        navigate(from, { replace: true });
+    };
+
+    return (
+        <>
+            <BrowserRouter>
+                <NavBar />
+                <Routes>
+                    <Route path='/' element={<RootElement />} />
+                    <Route
+                        path='/about'
+                        element={
+                            <PrivateRoute authorized={isLoggedIn}>
+                                <AboutThisSite />
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route
+                        path='/contact'
+                        element={
+                            <PrivateRoute authorized={isLoggedIn}>
+                                <ContactUs />
+                            </PrivateRoute>
+                        }
+                    />
+
+                    <Route path='/login' element={<LoginPage onClick={handleLogin} />} />
+                    <Route path='/user/:username' element={<User />} />
+                </Routes>
+                <h5>Some friends of mine</h5>
+                <ul>
+                    <li>
+                        <Link to='user/Josh'>Josh</Link>
+                    </li>
+                    <li>
+                        <Link to='user/Bri'>Bri</Link>
+                    </li>
+                    <li>
+                        <Link to='user/Sofia'>Sofia</Link>
+                    </li>
+                </ul>
+            </BrowserRouter>
+        </>
+    );
+};
+
+const RootElement = () => <span></span>;
+
+
 
 export default App;
