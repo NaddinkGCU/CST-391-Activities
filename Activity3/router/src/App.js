@@ -47,13 +47,13 @@ const App = () => {
                 <h5>Some friends of mine</h5>
                 <ul>
                     <li>
-                        <Link to='user/Josh'>Josh</Link>
+                        <Link to='user/Josh'>Mary</Link>
                     </li>
                     <li>
-                        <Link to='user/Bri'>Bri</Link>
+                        <Link to='user/Bri'>Justine</Link>
                     </li>
                     <li>
-                        <Link to='user/Sofia'>Sofia</Link>
+                        <Link to='user/Sofia'>Brianna</Link>
                     </li>
                 </ul>
             </BrowserRouter>
